@@ -4,10 +4,7 @@
  */
 
 const mongoose = require('mongoose');
-
 const mongoosePaginate = require('mongoose-paginate-v2');
-let idValidator = require('mongoose-id-validator');
-const uniqueValidator = require('mongoose-unique-validator');
 const bcrypt = require('bcrypt');
 
 const myCustomLabels = {
