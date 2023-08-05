@@ -77,7 +77,5 @@ schema.method('toJSON', function () {
   return object;
 });
 schema.plugin(mongoosePaginate);
-schema.plugin(idValidator);
-schema.plugin(uniqueValidator,{ message: 'Error, expected {VALUE} to be unique.' });
 const user = mongoose.model('user',schema);
 module.exports = user;
