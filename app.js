@@ -12,9 +12,9 @@ app.use(require('./utils/responseHandler'));
 
 const routes = require("./routes")
 app.use(routes)
-app.get('/', (req, res) => {
-    res.render('index');
-  });
+// app.get('/', (req, res) => {
+//     res.render('index');
+//   });
 
   app.listen( port, ()=>{
     console.log(`App is listening port at ${port}`)
